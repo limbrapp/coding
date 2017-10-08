@@ -1,0 +1,53 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - 'db/schema.rb'
+    - 'vendor/bundle/**/*'
+    - 'vendor/assets/**/*'
+
+Layout/AlignHash:
+  EnforcedHashRocketStyle: table
+
+Layout/AlignParameters:
+  EnforcedStyle: with_fixed_indentation
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+Layout/SpaceInsidePercentLiteralDelimiters:
+  Enabled: false
+
+Lint/UselessAccessModifier:
+  MethodCreatingMethods:
+    - delegate
+
+Metrics/BlockLength:
+  Exclude:
+    - 'config/routes.rb'
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/EachWithObject:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  EnforcedStyle: always
+
+Style/HashSyntax:
+  EnforcedStyle: hash_rockets
+
+Style/Lambda:
+  EnforcedStyle: lambda
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/TrivialAccessors:
+  IgnoreClassMethods: true
